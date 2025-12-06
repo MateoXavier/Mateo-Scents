@@ -557,7 +557,7 @@ footer a:hover {
 
 
 
-/* ==== FAMILIAS OLFATIVAS ==== */
+/*FAMILIAS OLFATIVAS */
 .familias-wrap {
   width: 90%;
   max-width: 1200px;
@@ -633,7 +633,7 @@ font-size: 1.15rem;
 
 
 
-/* GRID */
+
 .familias-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -864,7 +864,7 @@ font-size: 1.15rem;
   
 }
 
-/* ---- 1024px o menos (tablets, notebooks chicos) ---- */
+/*1024px o menos (tablets, notebooks chicos) */
 @media (max-width: 1024px) {
 
   header nav ul {
@@ -892,7 +892,7 @@ font-size: 1.15rem;
   }
 }
 
-/* ---- 768px o menos (tablet ) ---- */
+/*768px o menos (tablet )*/
 @media (max-width: 768px) {
 
   header .logo-1 img {
