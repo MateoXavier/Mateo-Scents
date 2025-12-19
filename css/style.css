@@ -1,8 +1,28 @@
 @charset "UTF-8";
 /*BOTONES*/
+.boton {
+  display: flex;
+  gap: 1rem;
+}
+
 .boton-volver {
   text-align: center;
   margin: 1.25rem 0;
+}
+
+.btn {
+  background-color: #b39700;
+  color: #3a3a3a;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .boton-volver a {
@@ -61,6 +81,25 @@
   color: #ffffff;
   background-color: #b39700;
   box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+/* Botones pag 4 */
+.boton-referencia {
+  border: 2px solid #b39700;
+  color: #b39700;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boton-referencia:hover {
+  background-color: #b39700;
+  color: #3a3a3a;
   transform: scale(1.05);
 }
 
@@ -291,7 +330,7 @@ footer a:hover {
 }
 
 .texto-principal {
-  max-width: 900px; /* MAS ANCHO */
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1rem;
   text-align: center;
@@ -302,50 +341,9 @@ footer a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
-  max-width: 900px; /* << MÁS ANCHO AÚN */
-  margin: 1rem auto 2rem auto; /* CENTRADO REAL */
+  max-width: 900px;
+  margin: 1rem auto 2rem auto;
   text-transform: uppercase;
-}
-
-/* Botones */
-.boton {
-  display: flex;
-  gap: 1rem;
-}
-
-/* Botón principal */
-.btn {
-  background-color: #b39700;
-  color: #3a3a3a;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* Botones pag 4 */
-.boton-referencia {
-  border: 2px solid #b39700;
-  color: #b39700;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  transition: 0.3s ease;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.boton-referencia:hover {
-  background-color: #b39700;
-  color: #3a3a3a;
-  transform: scale(1.05);
 }
 
 .hero-img img {
@@ -682,7 +680,7 @@ footer a:hover {
   font-weight: 600;
 }
 
-/*1024px o menos (tablets, notebooks chicos) */
+/*1024px o menos*/
 @media (max-width: 1024px) {
   header nav ul {
     gap: 1.5rem;
@@ -746,7 +744,7 @@ footer a:hover {
     margin: auto;
   }
   .bloque-nota-fondo {
-    grid-column: auto; /* deja de ocupar dos columnas */
+    grid-column: auto;
   }
   h2,
   .subtitulo {

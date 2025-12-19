@@ -1,10 +1,33 @@
 @use "./variables";
 
 /*BOTONES*/
+
+.boton{
+  display: flex;
+  gap: 1rem;
+}
+
 .boton-volver {
   text-align: center;       
   margin: 1.25rem 0; 
 }
+
+
+.btn {
+  background-color: variables.$dorado;
+  color: variables.$gris-fondo;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+
 
 .boton-volver a {
   color: variables.$dorado;
@@ -65,5 +88,25 @@
    color: variables.$blanco;
   background-color: variables.$dorado;
   box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+/* Botones pag 4 */
+.boton-referencia {
+  border: 2px solid variables.$dorado;
+  color: variables.$dorado;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: .3s ease;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.boton-referencia:hover {
+  background-color: variables.$dorado;
+  color: variables.$gris-fondo;
   transform: scale(1.05);
 }

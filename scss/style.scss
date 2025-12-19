@@ -254,7 +254,7 @@ footer a:hover {
 
 
 .texto-principal {
-    max-width: 900px;  /* MAS ANCHO */
+    max-width: 900px;  
     margin: 0 auto;
     padding: 0 1rem;
     text-align: center;
@@ -268,56 +268,10 @@ footer a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-    max-width: 900px;    /* << MÁS ANCHO AÚN */
-    margin: 1rem auto 2rem auto; /* CENTRADO REAL */
+    max-width: 900px;
+    margin: 1rem auto 2rem auto; 
     text-transform: uppercase;
 }
-
-
-
-/* Botones */
-.boton{
-  display: flex;
-  gap: 1rem;
-}
-
-/* Botón principal */
-.btn {
-  background-color: variables.$dorado;
-  color: variables.$gris-fondo;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  transition: .3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px rgba(0,0,0,.25);
-}
-
-/* Botones pag 4 */
-.boton-referencia {
-  border: 2px solid variables.$dorado;
-  color: variables.$dorado;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  transition: .3s ease;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.boton-referencia:hover {
-  background-color: variables.$dorado;
-  color: variables.$gris-fondo;
-  transform: scale(1.05);
-}
-
-
 .hero-img img {
   width: 100%;
   border-radius: 0.6rem;
@@ -673,7 +627,7 @@ font-size: 1.15rem;
   
 }
 
-/*1024px o menos (tablets, notebooks chicos) */
+/*1024px o menos*/
 @media (max-width: 1024px) {
 
   header nav ul {
@@ -751,7 +705,7 @@ font-size: 1.15rem;
     margin: auto;
   }
    .bloque-nota-fondo {
-        grid-column: auto; /* deja de ocupar dos columnas */
+        grid-column: auto; 
     }
 
   h2,
