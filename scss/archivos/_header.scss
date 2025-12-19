@@ -1,0 +1,38 @@
+@use "./variables";
+
+/*Header*/
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header .logo-1 {
+  width: 17.8rem; 
+  height: auto;
+  display: block;
+  margin: 0 auto 1.25rem auto; 
+  filter: drop-shadow(0 0.1875rem 0.375rem rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header .logo-1 img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
+
+
+.hero-notas {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+}
