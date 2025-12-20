@@ -80,14 +80,7 @@
   color: variables.$blanco;
 }
 
-.bloque-nota:hover{
-  transform: scale(1.03);
- transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-.bloque-nota-fondo:hover{
-  transform: scale(1.03);
-  transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
+
 
 
 .bloque-nota,
@@ -98,6 +91,7 @@
     padding: 40px;
     text-align: center;
     color: #fff;
+    @include mixins.bloque-nota;
 }
 
 

@@ -20,6 +20,11 @@
   }
 }
 
+@mixin bloque-nota ($scale:1.03){
+transform: $scale;
+ transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+ 
+}
 
 
 
