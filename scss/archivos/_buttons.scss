@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./mixins";
 
 /*BOTONES*/
 
@@ -21,12 +22,11 @@
   text-decoration: none;
   border-radius: 0.4rem;
   transition: .3s ease;
+  @include mixins.transition;
+  @include mixins.btn-hover;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px rgba(0,0,0,.25);
-}
+
 
 
 .boton-volver a {
@@ -44,14 +44,10 @@
   border: none;                   
   box-shadow: none;              
   display: inline-block;
+  @include mixins.btn-hover;
 }
 
-.boton-volver a:hover {
-  transform: scale(1.05);                    
-  box-shadow: 0 0.25rem 0.625rem rgba(255, 255, 255, 0.25);  
-  border: 0.125rem solid variables.$blanco;
-  
-}  
+
 
 .siguiente-pagina {
  text-align: center;
@@ -80,16 +76,11 @@
   border: 0.125rem solid transparent;
   transition: all 0.3s ease;
   box-shadow: none; 
+  @include mixins.btn-hover;
 }
 
 
 
-.siguiente-pagina a:hover {
-   color: variables.$blanco;
-  background-color: variables.$dorado;
-  box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.15);
-  transform: scale(1.05);
-}
 
 /* Botones pag 4 */
 .boton-referencia {
@@ -102,11 +93,6 @@
   transition: .3s ease;
   justify-content: center;
   flex-wrap: wrap;
+  @include mixins.btn-hover;
 
-}
-
-.boton-referencia:hover {
-  background-color: variables.$dorado;
-  color: variables.$gris-fondo;
-  transform: scale(1.05);
 }

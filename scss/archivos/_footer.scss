@@ -1,0 +1,43 @@
+@use "./variables";
+@use "./mixins";
+
+
+/*footer*/
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: variables.$gris-redes;
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  border-top: 0.0625rem solid variables.$gris-borde;
+  
+  
+}
+
+/* Mis redes */
+.mis-redes {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1.25rem 0;
+  border-top: 0.0625rem solid variables.$gris-borde;
+}
+
+.mis-redes h4 {
+  color: variables.$dorado;
+  font-family: variables.$font-base;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 0.9375rem;
+}
+
+.mis-redes a {
+  display: inline-block;
+  margin: 0 0.625rem;
+  color: variables.$dorado;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  @include mixins.btn-hover
+ 
+}
+
