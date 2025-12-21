@@ -2,6 +2,40 @@
 /*Colores*/
 /*fuente*/
 /* hover estándar de botón */
+.bloque-nota,
+.bloque-nota-fondo {
+  background: #212121;
+  border: 1px solid #e0c86f;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.bloque-nota h3,
+.bloque-nota-fondo h3 {
+  color: #b39700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0c86f;
+  padding-bottom: 10px;
+}
+
+.bloque-nota .ej,
+.bloque-nota-fondo .ej {
+  margin-top: 25px;
+  font-style: italic;
+  color: #b39700;
+}
+
+.boton-referencia {
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+}
+
 /*BOTONES*/
 .boton {
   display: flex;
@@ -87,11 +121,6 @@
 
 /* Botones pag 4 */
 .boton-referencia {
-  border: 2px solid #b39700;
-  color: #b39700;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
   border-radius: 0.4rem;
   transition: 0.3s ease;
   justify-content: center;
@@ -170,30 +199,8 @@
 
 .bloque-nota,
 .bloque-nota-fondo {
-  background: #212121;
-  border: 1px solid #bfa22f;
-  border-radius: 12px;
-  padding: 40px;
-  text-align: center;
-  color: #fff;
   transform: 1.03;
   transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.bloque-nota h3,
-.bloque-nota-fondo h3 {
-  color: #d4af37;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #bfa22f;
-  padding-bottom: 10px;
-}
-
-.bloque-nota .ej,
-.bloque-nota-fondo .ej {
-  margin-top: 25px;
-  font-style: italic;
-  color: #d4af37;
 }
 
 .bloque-nota-fondo {

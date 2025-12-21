@@ -1,5 +1,6 @@
 @use "./variables";
 @use "./mixins";
+@use "./extends";
 
 /*BOTONES*/
 
@@ -84,11 +85,7 @@
 
 /* Botones pag 4 */
 .boton-referencia {
-  border: 2px solid variables.$dorado;
-  color: variables.$dorado;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
+ @extend %btn-base;
   border-radius: 0.4rem;
   transition: .3s ease;
   justify-content: center;

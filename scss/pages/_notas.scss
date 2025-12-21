@@ -1,5 +1,6 @@
 @use "../archivos/variables";
 @use "../archivos/mixins";
+@use "../archivos/extends";
 
 /*PAGINA 4  CAMBIO DE ESTILO*/
 .notas {
@@ -85,31 +86,20 @@
 
 .bloque-nota,
 .bloque-nota-fondo {
-    background: #212121;
-    border: 1px solid #bfa22f;
-    border-radius: 12px;
-    padding: 40px;
-    text-align: center;
-    color: #fff;
+    @extend %card-base;
     @include mixins.bloque-nota;
 }
 
 
 .bloque-nota h3,
 .bloque-nota-fondo h3 {
-    color: #d4af37;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #bfa22f;
-    padding-bottom: 10px;
+   @extend %bloque-h3;
 }
 
 
 .bloque-nota .ej,
 .bloque-nota-fondo .ej {
-    margin-top: 25px;
-    font-style: italic;
-    color: #d4af37;
+    @extend %bloque-ej;
 }
 
 
