@@ -1,9 +1,10 @@
 @use "./archivos/variables";
 @use "./archivos/buttons";
 @use "./pages/notas";
-@use "./archivos/media_queries";
+@use "./archivos/media-queries";
 @use "./archivos/footer";
 @use "./archivos/mixins";
+@use "./archivos/extends";
 
 * {
   margin: 0;
