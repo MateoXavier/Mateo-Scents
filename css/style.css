@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*Colores*/
 /*fuente*/
-/* hover estándar de botón */
 .bloque-nota,
 .bloque-nota-fondo {
   background: #212121;
@@ -56,11 +55,6 @@
   border-radius: 0.4rem;
   transition: 0.3s ease;
   transition: all 0.3s ease;
-}
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
 }
 
 .boton-volver a {
@@ -288,7 +282,7 @@
 }
 .familia:hover {
   transform: scale(1.05);
-  color: #ffffff;
+  color: #e0c86f;
 }
 
 /*COLORES INDIVIDUALES*/
@@ -424,7 +418,7 @@
 }
 .origen-card:hover {
   transform: scale(1.05);
-  color: #ffffff;
+  color: #e0c86f;
 }
 
 .origen-card h3 {
@@ -572,6 +566,34 @@
     margin: 0.5rem 0;
   }
 }
+@media (max-width: 768px) {
+  header {
+    padding: 3rem 1.2rem;
+  }
+  header .titulo {
+    font-size: 2.3rem;
+  }
+  .creador-img {
+    max-width: 90%;
+  }
+  .modal-body {
+    text-align: center;
+  }
+  .modal-body img {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  header .logo-1 img {
+    width: 145px;
+  }
+  header .titulo {
+    font-size: 2rem;
+  }
+  .carousel-item h3 {
+    font-size: 1.05rem;
+  }
+}
 /*footer*/
 footer {
   text-align: center;
@@ -607,6 +629,42 @@ footer {
   transition: all 0.3s ease;
 }
 .mis-redes a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+/*MODALS*/
+.modal-content {
+  background: #121212;
+  color: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #e0c86f;
+}
+
+.cierre-texto {
+  max-width: 700px;
+  margin: 2rem auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.container-cierre {
+  text-align: center;
+  padding: 6rem 0 4rem;
+}
+
+.btn-cierre {
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  background: #b39700;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-cierre:hover {
   transform: scale(1.05);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -695,7 +753,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   transform: scale(1.05);
-  color: #ffffff;
+  color: #e0c86f;
 }
 
 h2 span {

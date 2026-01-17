@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Creadores de Perfumería</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- TU CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--HEADER-->
+<header class="text-center py-5">
+  <div class="logo-1 mb-3">
+    <img src="../IMG/Logo-1.png" alt="Mateo Scents">
+  </div>
+
+  <h1 class="titulo">
+    Creadores de <span>Perfumería</span>
+  </h1>
+ 
+
+  <p class="container">
+    Conocer creadores de contenido especializados en perfumería es una de las mejores formas de desarrollar criterio propio dentro de un mundo tan amplio y subjetivo como el de las fragancias. A través de sus experiencias, comparativas y opiniones, estos creadores ayudan a entender cómo se comporta un perfume en la vida real: en distintos climas, ocasiones, estilos personales y tipos de piel, algo que ninguna descripción oficial puede transmitir por completo. Más allá de recomendar fragancias, su valor está en enseñar a interpretar notas, reconocer calidades, identificar perfiles olfativos y cuestionar el hype que muchas veces rodea a ciertos lanzamientos. Seguirlos permite aprender a elegir con conciencia, evitar compras impulsivas y descubrir perfumes que realmente conecten con la identidad de cada persona. La selección presentada en Mateo Scents reúne creadores con enfoques distintos —desde lo didáctico y analítico hasta lo visual y estilístico— porque entender la perfumería desde múltiples miradas es clave para formar gusto, criterio y personalidad olfativa.
+  </p>
+
+  
+</header>
+
+<!-- ================= CARRUSEL ================= -->
+<section class="container py-5">
+
+  <div id="creadoresCarousel" class="carousel slide" data-bs-ride="false">
+
+    <div class="carousel-inner">
+
+      <!-- ===== SLIDE 1 ===== -->
+      <div class="carousel-item active">
+        <div class="row g-10 text-center">
+
+          <div class="col-md-4">
+            <img src="../IMG/andres-perfume-man.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalAndres">
+            <h3 class="mt-3">Andrés Perfume Man</h3>
+          </div>
+
+          <div class="col-md-3">
+            <img src="../IMG/hueleme-mucho.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalHueleme">
+            <h3 class="mt-3">Huéleme Mucho</h3>
+          </div>
+
+          <div class="col-md-4">
+            <img src="../IMG/pablo-perfumes.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalPablo">
+            <h3 class="mt-3">Pablo Perfumes</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== SLIDE 2 ===== -->
+      <div class="carousel-item">
+        <div class="row g-4 text-center">
+
+          <div class="col-md-4">
+            <img src="../IMG/chilly.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalChilly">
+            <h3 class="mt-3">Its Chilly</h3>
+          </div>
+
+          <div class="col-md-4">
+            <img src="../IMG/nobleman-fragance.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalNobleman">
+            <h3 class="mt-3">Nobleman</h3>
+          </div>
+
+          <div class="col-md-4">
+            <img src="../IMG/jeremy-fragance.jpg" class="img-fluid rounded creador-img"
+                 data-bs-toggle="modal" data-bs-target="#modalJeremy">
+            <h3 class="mt-3">Jeremy Fragrance</h3>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTROLES -->
+    <button class="carousel-control-prev" type="button"
+            data-bs-target="#creadoresCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button"
+            data-bs-target="#creadoresCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ================= MODALS ================= -->
+
+<!-- ANDRÉS -->
+<div class="modal fade" id="modalAndres" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Andrés Perfume Man</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/andres-perfume-man.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+            Andres Perfume man es el creador de contenido mas grande a nivel internacional cuando se trata de perfumeria, tiene reviews muy a fondo probando las fragancias y hasta hace tops de fragancias de una linea para poder recomendarte lo mejor, cuenta con su propia linea de perfume "Andres Croxatto man" y "Andres Croxatto oud" los cuales son una eminencia en el mundo de las fragancias.
+          </p>
+          <a href="https://www.youtube.com/@AndresPerfumeMan" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HUÉLEME -->
+<div class="modal fade" id="modalHueleme" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Huéleme Mucho</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/hueleme-mucho.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+            Huéleme Mucho se caracteriza por un enfoque cercano, didáctico y muy accesible, ideal tanto para quienes recién se inician en la perfumería como para quienes buscan afinar su criterio. Su contenido pone el foco en explicar las fragancias desde la experiencia real, desglosando notas, sensaciones y usos sin tecnicismos innecesarios, lo que facilita entender por qué un perfume puede gustar o no según cada persona. Además, suele abordar comparativas prácticas, recomendaciones por ocasión y consejos para entrenar el olfato, promoviendo una forma más consciente de descubrir perfumes y disfrutar el proceso sin dejarse llevar solo por tendencias o hype.
+          </p>
+          <a href="https://www.youtube.com/@HuelemeMucho" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PABLO -->
+<div class="modal fade" id="modalPablo" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Pablo Perfumes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/pablo-perfumes.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+            Pablo Perfumes se destaca por ofrecer análisis estructurados y comparativas profundas, enfocándose en cómo se desempeñan las fragancias en contextos reales de uso (clima, ocasión, duración y proyección). Su contenido no solo te dice “qué huele bien”, sino por qué funciona o no en distintos escenarios, explorando similitudes entre fragancias, contrastes entre nicho y comercial, y sugerencias prácticas para distintos estilos personales. Además, suele acompañar sus reseñas con puntos claros de rendimiento (longevidad, estela, balance de notas) y recomendaciones según personalidad, momento del día o evento, lo que lo hace ideal para quienes quieren llevar criterio a sus decisiones y no basarse solo en popularidad.
+          </p>
+          <a href="https://www.youtube.com/@PabloPerfumes" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ITS CHILLY -->
+<div class="modal fade" id="modalChilly" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Its Chilly</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/chilly.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+           Its Chilly se destaca por un enfoque visual y contemporáneo, con contenido pensado para el consumo rápido y directo. Si bien actualmente no se encuentra activo en YouTube, su presencia es fuerte en Instagram, donde comparte recomendaciones ágiles, impresiones rápidas y selecciones de fragancias orientadas a distintos estilos y momentos. Su propuesta apunta a una perfumería más dinámica y estética, combinando imagen, actitud y fragancia, ideal para quienes buscan inspiración inmediata y una mirada fresca sin necesidad de análisis extensos.
+          </p>
+          <a href="https://www.instagram.com/itschily/?igsh=MWR4dHFqanRvNjV1dw%3D%3D#" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NOBLEMAN-->
+<div class="modal fade" id="modalNobleman" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Nobleman</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/nobleman-fragance.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+            Nobleman propone una mirada elegante y curada de la perfumería, con especial atención al estilo personal, la presencia y la sofisticación. Su contenido se centra en fragancias que acompañan una estética definida, explorando perfumes que transmiten carácter, seguridad y refinamiento, tanto en contextos formales como en el día a día. Más que perseguir tendencias, Nobleman apuesta por una selección consciente y bien pensada, ideal para quienes buscan fragancias que complementen su imagen y refuercen su identidad, priorizando equilibrio, calidad y coherencia por sobre el hype.
+          </p>
+          <a href="#" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JEREMY -->
+<div class="modal fade" id="modalJeremy" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Jeremy Fragrance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row g-4 align-items-center">
+        <div class="col-md-5">
+          <img src="../IMG/jeremy-fragance.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <p>
+            Jeremy Fragrance es un creador de contenido alemán y una de las figuras más reconocidas y polémicas—del mundo de la perfumería en redes. Se dedica a este ámbito desde hace más de una década, siendo uno de los primeros en llevar la perfumería a un formato masivo en YouTube, combinando entretenimiento, opinión directa y foco en impacto. Además de su faceta como influencer, Jeremy cuenta con su propia línea de perfumes, orientada a fragancias de alta proyección y carácter llamativo, alineadas con su personalidad y visión del mercado. Su contenido apunta principalmente a perfumes con fuerte presencia y popularidad, convirtiéndolo en una referencia clave para entender tendencias, gustos masivos y el lado más comercial de la perfumería contemporánea.
+          </p>
+          <a href="https://www.youtube.com/channel/UCzKrJ5NSA9o7RHYRG12kHZw" target="_blank" class="btn btn-outline-warning">
+            Ver canal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container-cierre">
+
+  <h2 class="subtitulo">Final De la Página</h2>
+
+  <p class="cierre-texto">Este proyecto nace de la pasión por la perfumería, el detalle y la identidad.
+    Acá no se trata solo de perfumes, sino de presencia, clima y carácter.
+  La perfumería, cuando se la mira con atención, deja de ser solo un producto
+  y se convierte en lenguaje. Un lenguaje silencioso, algo que entra justo despues de la primera mirada, que es simple pero poderoso, que habla
+  antes que las palabras y permanece incluso después de irse. Espero haber podido ayudarte a encontrar esa fragancia que te vuele la cabeza, o a encontrar ese perfume para esa ocasión que tanto necesitabas. O quizas solamente necesitabas algo para el día a día. De cualquier manera espero haber sido de ayuda.</p>
+
+ <div class="cierre-cta">
+    <a href="../index.html" class="btn-cierre">Volver Al Inicio</a>
+  </div>
+    
+</section>
+
+
+<!-- FOOTER -->
+  <footer id="Contacto" class="mis-redes">
+    <h4>Mis Redes</h4>
+    <a href="https://www.instagram.com/mateoo__xg/" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/mateo-nicolas-xavier-guerra-59a706249/" target="_blank">LinkedIn</a>
+  </footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

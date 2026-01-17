@@ -1,0 +1,35 @@
+ @use "../archivos/variables";
+ @use "../archivos/mixins";
+
+/*MODALS*/
+.modal-content {
+  background: #121212;
+  color: variables.$blanco;
+  border-radius: 22px;
+  border: 1px solid variables.$dorado-claro;
+}
+
+.cierre-texto {
+  max-width: 700px;
+  margin: 2rem auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: variables.$blanco;
+}
+
+.container-cierre {
+  text-align: center;
+  padding: 6rem 0 4rem;
+}
+
+.btn-cierre {
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  background: variables.$dorado;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  @include mixins.btn-hover;
+}
+

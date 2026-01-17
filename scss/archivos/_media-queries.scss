@@ -139,3 +139,43 @@
     margin: 0.5rem 0;
   }
 }
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 3rem 1.2rem;
+
+    .titulo {
+      font-size: 2.3rem;
+    }
+  }
+
+  .creador-img {
+    max-width: 90%;
+  }
+
+  .modal-body {
+    text-align: center;
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  header .logo-1 img {
+    width: 145px;
+  }
+
+  header .titulo {
+    font-size: 2rem;
+  }
+
+  .carousel-item h3 {
+    font-size: 1.05rem;
+  }
+}
