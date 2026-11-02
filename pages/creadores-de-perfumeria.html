@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="creadores de perfumeria, dedicada a el conocer a las eminencias de la perfumeria internacional">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="creadores de perfumeria, dedicada a el conocer a las eminencias de la perfumeria internacional">
 
   <title>Creadores de Perfumería</title>
 
   <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- TU CSS -->
   <link rel="stylesheet" href="../css/style.css">
@@ -47,23 +48,26 @@
 
       <!-- ===== SLIDE 1 ===== -->
       <div class="carousel-item active">
-        <div class="row g-10 text-center">
+        <div class="row g-4 text-center">
 
           <div class="col-md-4">
-            <img src="../img/andres-perfume-man.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalAndres">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalAndres" aria-label="Ver información de Andrés Perfume Man">
+              <img src="../img/andres-perfume-man.jpg" class="img-fluid rounded creador-img" alt="Andrés Perfume Man">
+            </button>
             <h3 class="mt-3">Andrés Perfume Man</h3>
           </div>
 
-          <div class="col-md-3">
-            <img src="../img/hueleme-mucho.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalHueleme">
+          <div class="col-md-4">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalHueleme" aria-label="Ver información de Huéleme Mucho">
+              <img src="../img/hueleme-mucho.jpg" class="img-fluid rounded creador-img" alt="Huéleme Mucho">
+            </button>
             <h3 class="mt-3">Huéleme Mucho</h3>
           </div>
 
           <div class="col-md-4">
-            <img src="../img/pablo-perfumes.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalPablo">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalPablo" aria-label="Ver información de Pablo Perfumes">
+              <img src="../img/pablo-perfumes.jpg" class="img-fluid rounded creador-img" alt="Pablo Perfumes">
+            </button>
             <h3 class="mt-3">Pablo Perfumes</h3>
           </div>
 
@@ -75,20 +79,23 @@
         <div class="row g-4 text-center">
 
           <div class="col-md-4">
-            <img src="../img/chilly.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalChilly">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalChilly" aria-label="Ver información de Its Chilly">
+              <img src="../img/chilly.jpg" class="img-fluid rounded creador-img" alt="Its Chilly">
+            </button>
             <h3 class="mt-3">Its Chilly</h3>
           </div>
 
           <div class="col-md-4">
-            <img src="../img/nobleman-fragance.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalNobleman">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalNobleman" aria-label="Ver información de Nobleman">
+              <img src="../img/nobleman-fragance.jpg" class="img-fluid rounded creador-img" alt="Nobleman">
+            </button>
             <h3 class="mt-3">Nobleman</h3>
           </div>
 
           <div class="col-md-4">
-            <img src="../img/jeremy-fragance.jpg" class="img-fluid rounded creador-img"
-                 data-bs-toggle="modal" data-bs-target="#modalJeremy">
+            <button type="button" class="creador-trigger" data-bs-toggle="modal" data-bs-target="#modalJeremy" aria-label="Ver información de Jeremy Fragrance">
+              <img src="../img/jeremy-fragance.jpg" class="img-fluid rounded creador-img" alt="Jeremy Fragrance">
+            </button>
             <h3 class="mt-3">Jeremy Fragrance</h3>
           </div>
 
@@ -99,13 +106,13 @@
 
     <!-- CONTROLES -->
     <button class="carousel-control-prev" type="button"
-            data-bs-target="#creadoresCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+            data-bs-target="#creadoresCarousel" data-bs-slide="prev" aria-label="Anterior">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
 
     <button class="carousel-control-next" type="button"
-            data-bs-target="#creadoresCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+            data-bs-target="#creadoresCarousel" data-bs-slide="next" aria-label="Siguiente">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
 
   </div>
@@ -115,22 +122,22 @@
 <!-- ================= MODALS ================= -->
 
 <!-- ANDRÉS -->
-<div class="modal fade" id="modalAndres" tabindex="-1">
+<div class="modal fade" id="modalAndres" tabindex="-1" aria-labelledby="modalAndresTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Andrés Perfume Man</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalAndresTitle">Andrés Perfume Man</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/andres-perfume-man.jpg" class="img-fluid rounded">
+          <img src="../img/andres-perfume-man.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
             Andres Perfume man es el creador de contenido mas grande a nivel internacional cuando se trata de perfumeria, tiene reviews muy a fondo probando las fragancias y hasta hace tops de fragancias de una linea para poder recomendarte lo mejor, cuenta con su propia linea de perfume "Andres Croxatto man" y "Andres Croxatto oud" los cuales son una eminencia en el mundo de las fragancias.
           </p>
-          <a href="https://www.youtube.com/@AndresPerfumeMan" target="_blank" class="btn btn-outline-warning">
+          <a href="https://www.youtube.com/@AndresPerfumeMan" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning">
             Ver canal
           </a>
         </div>
@@ -140,22 +147,22 @@
 </div>
 
 <!-- HUÉLEME -->
-<div class="modal fade" id="modalHueleme" tabindex="-1">
+<div class="modal fade" id="modalHueleme" tabindex="-1" aria-labelledby="modalHuelemeTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Huéleme Mucho</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalHuelemeTitle">Huéleme Mucho</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/hueleme-mucho.jpg" class="img-fluid rounded">
+          <img src="../img/hueleme-mucho.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
             Huéleme Mucho se caracteriza por un enfoque cercano, didáctico y muy accesible, ideal tanto para quienes recién se inician en la perfumería como para quienes buscan afinar su criterio. Su contenido pone el foco en explicar las fragancias desde la experiencia real, desglosando notas, sensaciones y usos sin tecnicismos innecesarios, lo que facilita entender por qué un perfume puede gustar o no según cada persona. Además, suele abordar comparativas prácticas, recomendaciones por ocasión y consejos para entrenar el olfato, promoviendo una forma más consciente de descubrir perfumes y disfrutar el proceso sin dejarse llevar solo por tendencias o hype.
           </p>
-          <a href="https://www.youtube.com/@HuelemeMucho" target="_blank" class="btn btn-outline-warning">
+          <a href="https://www.youtube.com/@HuelemeMucho" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning">
             Ver canal
           </a>
         </div>
@@ -165,22 +172,22 @@
 </div>
 
 <!-- PABLO -->
-<div class="modal fade" id="modalPablo" tabindex="-1">
+<div class="modal fade" id="modalPablo" tabindex="-1" aria-labelledby="modalPabloTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Pablo Perfumes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalPabloTitle">Pablo Perfumes</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/pablo-perfumes.jpg" class="img-fluid rounded">
+          <img src="../img/pablo-perfumes.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
             Pablo Perfumes se destaca por ofrecer análisis estructurados y comparativas profundas, enfocándose en cómo se desempeñan las fragancias en contextos reales de uso (clima, ocasión, duración y proyección). Su contenido no solo te dice “qué huele bien”, sino por qué funciona o no en distintos escenarios, explorando similitudes entre fragancias, contrastes entre nicho y comercial, y sugerencias prácticas para distintos estilos personales. Además, suele acompañar sus reseñas con puntos claros de rendimiento (longevidad, estela, balance de notas) y recomendaciones según personalidad, momento del día o evento, lo que lo hace ideal para quienes quieren llevar criterio a sus decisiones y no basarse solo en popularidad.
           </p>
-          <a href="https://www.youtube.com/@PabloPerfumes" target="_blank" class="btn btn-outline-warning">
+          <a href="https://www.youtube.com/@PabloPerfumes" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning">
             Ver canal
           </a>
         </div>
@@ -190,22 +197,22 @@
 </div>
 
 <!-- ITS CHILLY -->
-<div class="modal fade" id="modalChilly" tabindex="-1">
+<div class="modal fade" id="modalChilly" tabindex="-1" aria-labelledby="modalChillyTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Its Chilly</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalChillyTitle">Its Chilly</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/chilly.jpg" class="img-fluid rounded">
+          <img src="../img/chilly.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
            Its Chilly se destaca por un enfoque visual y contemporáneo, con contenido pensado para el consumo rápido y directo. Si bien actualmente no se encuentra activo en YouTube, su presencia es fuerte en Instagram, donde comparte recomendaciones ágiles, impresiones rápidas y selecciones de fragancias orientadas a distintos estilos y momentos. Su propuesta apunta a una perfumería más dinámica y estética, combinando imagen, actitud y fragancia, ideal para quienes buscan inspiración inmediata y una mirada fresca sin necesidad de análisis extensos.
           </p>
-          <a href="https://www.instagram.com/itschily/?igsh=MWR4dHFqanRvNjV1dw%3D%3D#" target="_blank" class="btn btn-outline-warning">
+          <a href="https://www.instagram.com/itschily/?igsh=MWR4dHFqanRvNjV1dw%3D%3D#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning">
             Ver canal
           </a>
         </div>
@@ -215,24 +222,22 @@
 </div>
 
 <!-- NOBLEMAN-->
-<div class="modal fade" id="modalNobleman" tabindex="-1">
+<div class="modal fade" id="modalNobleman" tabindex="-1" aria-labelledby="modalNoblemanTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Nobleman</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalNoblemanTitle">Nobleman</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/nobleman-fragance.jpg" class="img-fluid rounded">
+          <img src="../img/nobleman-fragance.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
             Nobleman propone una mirada elegante y curada de la perfumería, con especial atención al estilo personal, la presencia y la sofisticación. Su contenido se centra en fragancias que acompañan una estética definida, explorando perfumes que transmiten carácter, seguridad y refinamiento, tanto en contextos formales como en el día a día. Más que perseguir tendencias, Nobleman apuesta por una selección consciente y bien pensada, ideal para quienes buscan fragancias que complementen su imagen y refuercen su identidad, priorizando equilibrio, calidad y coherencia por sobre el hype.
           </p>
-          <a href="#" target="_blank" class="btn btn-outline-warning">
-            Ver canal
-          </a>
+          <span class="text-secondary">Canal pendiente de confirmar</span>
         </div>
       </div>
     </div>
@@ -240,22 +245,22 @@
 </div>
 
 <!-- JEREMY -->
-<div class="modal fade" id="modalJeremy" tabindex="-1">
+<div class="modal fade" id="modalJeremy" tabindex="-1" aria-labelledby="modalJeremyTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h5 class="modal-title">Jeremy Fragrance</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="modalJeremyTitle">Jeremy Fragrance</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body row g-4 align-items-center">
         <div class="col-md-5">
-          <img src="../img/jeremy-fragance.jpg  " class="img-fluid rounded">
+          <img src="../img/jeremy-fragance.jpg" class="img-fluid rounded" alt="Retrato del creador">
         </div>
         <div class="col-md-7">
           <p>
             Jeremy Fragrance es un creador de contenido alemán y una de las figuras más reconocidas y polémicas—del mundo de la perfumería en redes. Se dedica a este ámbito desde hace más de una década, siendo uno de los primeros en llevar la perfumería a un formato masivo en YouTube, combinando entretenimiento, opinión directa y foco en impacto. Además de su faceta como influencer, Jeremy cuenta con su propia línea de perfumes, orientada a fragancias de alta proyección y carácter llamativo, alineadas con su personalidad y visión del mercado. Su contenido apunta principalmente a perfumes con fuerte presencia y popularidad, convirtiéndolo en una referencia clave para entender tendencias, gustos masivos y el lado más comercial de la perfumería contemporánea.
           </p>
-          <a href="https://www.youtube.com/channel/UCzKrJ5NSA9o7RHYRG12kHZw" target="_blank" class="btn btn-outline-warning">
+          <a href="https://www.youtube.com/channel/UCzKrJ5NSA9o7RHYRG12kHZw" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning">
             Ver canal
           </a>
         </div>
@@ -284,12 +289,13 @@
 <!-- FOOTER -->
   <footer id="Contacto" class="mis-redes">
     <h4>Mis Redes</h4>
-    <a href="https://www.instagram.com/mateoo__xg/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/mateo-nicolas-xavier-guerra-59a706249/" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/mateoo__xg/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.linkedin.com/in/mateo-nicolas-xavier-guerra-59a706249/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </footer>
 
 <!-- BOOTSTRAP JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+

@@ -1,3 +1,4 @@
+@mixin responsive {
 /*1024px o menos*/
 @media (max-width: 1024px) {
 
@@ -179,3 +180,6 @@
     font-size: 1.05rem;
   }
 }
+
+}
+
