@@ -1,0 +1,10 @@
+{
+  "name": "mateo-scents",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "1.107.1"
+  }
+}
